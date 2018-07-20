@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'responders'
 gem 'active_model_serializers'
 gem 'will_paginate'
+gem 'pg'
 
 group :development, :test do
   gem 'byebug', platform: :mri
