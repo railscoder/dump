@@ -4,7 +4,7 @@ class AnalyticsController < ApplicationController
   end
 
   def index
-  	@analytics = Analytic.all
+  	@analytics = Analytic.paginate(:page => params[:page], :per_page => 5)
   	respond_with @analytics, each_serializer: AnalyticSerializer
   end
 
