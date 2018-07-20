@@ -1,6 +1,6 @@
 class AnalyticsController < ApplicationController
   def create
-  	analytic = Analytic.create(analytic_params)
+  	respond_with AnalyticForm.new(analytic_params).save, location: analytics_path
   end
 
   def index
