@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resource :analytics, only: [:create, :index]
+  resources :analytics, only: [:index, :create]
 end
