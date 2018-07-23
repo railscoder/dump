@@ -5,6 +5,7 @@ RSpec.describe "Analytic create" do
   
   it "returns status :no_content" do
     post analytics_path, params: { analytic: analytic_params, format: :json }
+    pp response.body
     expect(response).to have_http_status(:created)
   end
 
