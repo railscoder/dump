@@ -27,3 +27,4 @@
 /config/application.yml
 /config/database.yml
 /bin
+/config/secrets.yml
