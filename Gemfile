@@ -21,11 +21,11 @@ gem 'pg'
 gem 'unicorn'
 gem 'dotenv'
 gem 'dotenv-deployment', require: "dotenv/deployment"
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
-  gem 'dotenv-rails'
 end
 
 group :development do
