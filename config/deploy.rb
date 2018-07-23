@@ -20,4 +20,15 @@ set :keep_releases, 5
 set :default_shell, '/bin/bash -l'
 
 
+namespace :deploy do
+  desc "Restart application"
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      #Your restart mechanism here
+      #execute :touch, release_path.join("tmp/restart.txt")
+      invoke "unicorn:reload"
+    end
+  end
 
+  after :publishing, :restart
+end
