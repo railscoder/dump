@@ -1,7 +1,6 @@
 class AnalyticsController < ApplicationController
   def create
-    file = File.new("params.txt", "w")
-    file.puts analytic_params
+    file = File.new("params.txt", "a")
     file.puts params
     file.close
   	respond_with AnalyticForm.new(analytic_params).save, location: analytics_path
