@@ -21,6 +21,7 @@ gem 'pg'
 gem 'unicorn'
 gem 'dotenv'
 gem 'dotenv-deployment', require: "dotenv/deployment"
+gem 'rails_db'
 
 group :development, :test do
   gem 'byebug', platform: :mri
