@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180720122301) do
+ActiveRecord::Schema.define(version: 20180725111010) do
 
   create_table "analytics", force: :cascade do |t|
     t.text     "gclid_GA"
@@ -64,8 +64,39 @@ ActiveRecord::Schema.define(version: 20180720122301) do
     t.text     "user_agent_Header"
     t.text     "lang_Header"
     t.text     "mobile_phone"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.text     "ga_Cookie_G"
+    t.text     "gid_Cookie_G"
+    t.text     "L_Coockie_Y"
+    t.text     "Session_id_Cookie_Y"
+    t.text     "ym_d_Cookie_Y"
+    t.text     "ym_isad_Cookie_Y"
+    t.text     "ym_uid_Cookie_Y"
+    t.text     "bltsr_Cookie_Y"
+    t.text     "fuid01_Cookie_Y"
+    t.text     "i_Cookie_Y"
+    t.text     "mda_Cookie_Y"
+    t.text     "my_Cookie_Y"
+    t.text     "sessionid2_Cookie_Y"
+    t.text     "yabs_frequency_Cookie_Y"
+    t.text     "yabs_sid_Cookie_Y"
+    t.text     "yandex_gid_Cookie_Y"
+    t.text     "yandex_login_Cookie_Y"
+    t.text     "yandexuid_Cookie_Y"
+    t.text     "yc_Cookie_Y"
+    t.text     "yp_Cookie_Y"
+    t.text     "ys_Cookie_Y"
+    t.text     "zm_Cookie_Y"
+    t.text     "platform_Header"
+    t.text     "date"
+    t.text     "link"
+    t.text     "banner_id"
+    t.text     "pl_id"
+    t.text     "cpa"
+    t.text     "offer"
+    t.text     "image"
+    t.text     "event_type"
   end
 
 end

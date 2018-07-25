@@ -50,4 +50,35 @@ Fabricator(:analytic) do
   user_agent_Header { FFaker::HTMLIpsum.body }
   lang_Header { FFaker::HTMLIpsum.body }
   mobile_phone { FFaker::HTMLIpsum.body }
+  ga_Cookie_G { FFaker::HTMLIpsum.body }
+  gid_Cookie_G { FFaker::HTMLIpsum.body }
+  L_Coockie_Y { FFaker::HTMLIpsum.body }
+  Session_id_Cookie_Y { FFaker::HTMLIpsum.body }
+  ym_d_Cookie_Y { FFaker::HTMLIpsum.body }
+  ym_isad_Cookie_Y { FFaker::HTMLIpsum.body }
+  ym_uid_Cookie_Y { FFaker::HTMLIpsum.body }
+  bltsr_Cookie_Y { FFaker::HTMLIpsum.body }
+  fuid01_Cookie_Y { FFaker::HTMLIpsum.body }
+  i_Cookie_Y { FFaker::HTMLIpsum.body }
+  mda_Cookie_Y { FFaker::HTMLIpsum.body }
+  my_Cookie_Y { FFaker::HTMLIpsum.body }
+  sessionid2_Cookie_Y { FFaker::HTMLIpsum.body }
+  yabs_frequency_Cookie_Y { FFaker::HTMLIpsum.body }
+  yabs_sid_Cookie_Y { FFaker::HTMLIpsum.body }
+  yandex_gid_Cookie_Y { FFaker::HTMLIpsum.body }
+  yandex_login_Cookie_Y { FFaker::HTMLIpsum.body }
+  yandexuid_Cookie_Y { FFaker::HTMLIpsum.body }
+  yc_Cookie_Y { FFaker::HTMLIpsum.body }
+  yp_Cookie_Y { FFaker::HTMLIpsum.body }
+  ys_Cookie_Y { FFaker::HTMLIpsum.body }
+  zm_Cookie_Y { FFaker::HTMLIpsum.body }
+  platform_Header { FFaker::HTMLIpsum.body }
+  date { FFaker::HTMLIpsum.body }
+  link { FFaker::HTMLIpsum.body }
+  banner_id { FFaker::HTMLIpsum.body }
+  pl_id { FFaker::HTMLIpsum.body }
+  cpa { FFaker::HTMLIpsum.body }
+  offer { FFaker::HTMLIpsum.body }
+  image { FFaker::HTMLIpsum.body }
+  event_type { FFaker::HTMLIpsum.body }
 end
