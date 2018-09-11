@@ -1,7 +1,7 @@
 class AnalyticsController < ApplicationController
   def create
-    attributes = params[:analytic].nil? ? simple_params : analytic_params
-  	respond_with AnalyticForm.new(attributes).save, location: analytics_path
+    #attributes = params[:analytic].nil? ? simple_params : analytic_params
+  	respond_with AnalyticForm.new(analytic_params).save, location: analytics_path
   end
 
   def index
